@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>python的mathprolib库--三角函数相关</title>
+    <link href="/2020/07/05/Python-tringometry/"/>
+    <url>/2020/07/05/Python-tringometry/</url>
+    
+    <content type="html"><![CDATA[<h2 id="三角函数相关"><a href="#三角函数相关" class="headerlink" title="三角函数相关"></a>三角函数相关</h2><h3 id="sin"><a href="#sin" class="headerlink" title="sin"></a>sin</h3><ul><li>功能：返回一个数的角度值正弦</li><li>可能返回的错误：</li><li><ul><li>无</li></ul></li></ul><h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><pre><code class="hljs python">&gt;&gt;&gt;<span class="hljs-keyword">from</span> mathprolib.simple <span class="hljs-keyword">import</span> *&gt;&gt;&gt;sin(<span class="hljs-number">90</span>)<span class="hljs-number">1</span>&gt;&gt;&gt;sin(<span class="hljs-number">30</span>)<span class="hljs-number">0.5</span></code></pre>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Python语言的mathprolib</title>
     <link href="/2020/07/05/python%E8%AF%AD%E8%A8%80%E7%9A%84mathprolib/"/>
     <url>/2020/07/05/python%E8%AF%AD%E8%A8%80%E7%9A%84mathprolib/</url>
