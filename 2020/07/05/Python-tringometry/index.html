@@ -349,16 +349,19 @@
 
   
 
-  <footer class="mt-5">
+  <footer class="mt-5 mdui-color-blue-400">
   <div>
   
-  <div class="text-center py-3">
+  <div class="text-center py-3 mdui-typo">
+    <p class="mdui-typo-title">本站从 2020/7/2 12:30:00开始运行</p>
+    <div class="mdui-typo-body-1">
     <span id="timeDate">载入天数...</span>
-  <span id="times">载入时分秒...</span>
+    <span id="times">载入时分秒...</span>
+  </div>
   <script>
   var now = new Date();
   function createtime(){
-      var grt= new Date("07/2/2020 12:30:00");//此处修改你的建站时间或者网站上线时间
+      var grt= new Date("07/02/2020 12:30:00");//此处修改你的建站时间或者网站上线时间
       now.setTime(now.getTime()+250);
       days = (now - grt ) / 1000 / 60 / 60 / 24;
       dnum = Math.floor(days);
@@ -377,7 +380,7 @@
       if(String(snum).length ==1 ){
                 snum = "0" + snum;
       }
-      document.getElementById("timeDate").innerHTML = "本站安全运行&nbsp"+dnum+"&nbsp天";
+      document.getElementById("timeDate").innerHTML = "本站已安全运行&nbsp"+dnum+"&nbsp天";
       document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
   }
   setInterval("createtime()",250);
