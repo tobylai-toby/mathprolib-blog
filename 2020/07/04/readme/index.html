@@ -27,7 +27,7 @@
 
   
     
-    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/monokai-sublime.min.css" />
   
 
   
@@ -152,7 +152,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      484 字
+      大约 484 字
     </span>
   
 
@@ -161,7 +161,7 @@
     <span class="post-meta mr-2">
       <i class="iconfont icon-clock-fill"></i>
       
-      
+      阅读时间： 大约 
       7
        分钟
     </span>
@@ -245,7 +245,7 @@
 </tbody></table>
 <h1 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h1><p>下面是分数运算的用法示例，这里以Python为例子</p>
 <h3 id="分数运算和比较"><a href="#分数运算和比较" class="headerlink" title="分数运算和比较"></a>分数运算和比较</h3><p>下面的代码展现了mathprolib的<a href="https://baike.baidu.com/item/%E5%88%86%E6%95%B0/2067623#8" target="_blank" rel="noopener">分数的基本运算</a></p>
-<pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Fraction <span class="hljs-keyword">import</span> VulgarFraction,MixedFraction
+<div class="hljs"><pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Fraction <span class="hljs-keyword">import</span> VulgarFraction,MixedFraction
 f1=VulgarFraction(<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)<span class="hljs-comment">#三分之一</span>
 f2=MixedFraction(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)<span class="hljs-comment">#一又三分之二</span>
 print(f1+f2)
@@ -275,10 +275,10 @@ print(f1&gt;=VulgarFraction(<span class="hljs-number">1</span>,<span class="hljs
 <span class="hljs-comment"># False</span>
 <span class="hljs-comment"># True</span>
 <span class="hljs-comment"># False</span>
-<span class="hljs-comment"># True</span></code></pre>
+<span class="hljs-comment"># True</span></code></pre></div>
 
 <h3 id="约分、通分"><a href="#约分、通分" class="headerlink" title="约分、通分"></a>约分、通分</h3><p>下面展示了如何在mathprolib中<a href="https://baike.baidu.com/item/%E7%BA%A6%E5%88%86" target="_blank" rel="noopener">约分</a>、<a href="https://baike.baidu.com/item/%E9%80%9A%E5%88%86" target="_blank" rel="noopener">通分</a></p>
-<pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Fraction <span class="hljs-keyword">import</span> VulgarFraction,MixedFraction
+<div class="hljs"><pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Fraction <span class="hljs-keyword">import</span> VulgarFraction,MixedFraction
 vgf1=VulgarFraction(<span class="hljs-number">5</span>,<span class="hljs-number">20</span>)<span class="hljs-comment"># 5/20</span>
 vgf1.reduction()<span class="hljs-comment">#约分至最简: 1/4</span>
 vgf2=VulgarFraction(<span class="hljs-number">4</span>,<span class="hljs-number">20</span>) <span class="hljs-comment">#4/20</span>
@@ -292,29 +292,29 @@ vgf3=VulgarFraction(<span class="hljs-number">1</span>,<span class="hljs-number"
 mxf2=MixedFraction(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
 mxf2=vgf3.common(mxf2)
 vgf3<span class="hljs-comment"># 3/12</span>
-mxf2<span class="hljs-comment"># 20/12</span></code></pre>
+mxf2<span class="hljs-comment"># 20/12</span></code></pre></div>
 
 <h3 id="连分数"><a href="#连分数" class="headerlink" title="连分数"></a>连分数</h3><p>下面展示了如何在mathprolib中使用连分数</p>
-<pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Fraction <span class="hljs-keyword">import</span> VulgarFraction,MixedFraction
+<div class="hljs"><pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Fraction <span class="hljs-keyword">import</span> VulgarFraction,MixedFraction
 vgf1 = VulgarFraction(VulgarFraction(<span class="hljs-number">5</span>,<span class="hljs-number">2</span>),<span class="hljs-number">3</span>) <span class="hljs-comment"># 5/2/3 = 5/6</span>
 vgf2 = vgf1
 print(vgf1+vgf2) <span class="hljs-comment"># 5/3</span>
 print(vgf2-vgf1) <span class="hljs-comment"># 0</span>
 print(vgf1*vgf2) <span class="hljs-comment"># 25/36</span>
-<span class="hljs-comment"># 带分数的连分数还在开发中</span></code></pre>
+<span class="hljs-comment"># 带分数的连分数还在开发中</span></code></pre></div>
 <h5 id="温馨小提示-不要使用mathprolib的Fraction来制作无穷级数，因为转float过程中需要递归qwq"><a href="#温馨小提示-不要使用mathprolib的Fraction来制作无穷级数，因为转float过程中需要递归qwq" class="headerlink" title="温馨小提示:不要使用mathprolib的Fraction来制作无穷级数，因为转float过程中需要递归qwq"></a><strong>温馨小提示:不要使用mathprolib的Fraction来制作无穷级数，因为转float过程中需要递归qwq</strong></h5><h1 id="科学计数法"><a href="#科学计数法" class="headerlink" title="科学计数法"></a>科学计数法</h1><p>下面是<a href="https://baike.baidu.com/item/%E7%A7%91%E5%AD%A6%E8%AE%B0%E6%95%B0%E6%B3%95/1612882" target="_blank" rel="noopener">科学计数法的用法示例</a>，这里以Python为例子</p>
-<pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib <span class="hljs-keyword">import</span> Scientific
+<div class="hljs"><pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib <span class="hljs-keyword">import</span> Scientific
 s = Scientific.Scientific_notation(<span class="hljs-number">3</span>,<span class="hljs-number">5</span>)
 print(s)
 print((a*a)**<span class="hljs-number">2</span>) <span class="hljs-comment">#相当于a**4的意思</span>
-print(a+<span class="hljs-number">666</span>)</code></pre>
+print(a+<span class="hljs-number">666</span>)</code></pre></div>
 
 <h1 id="无限小数"><a href="#无限小数" class="headerlink" title="无限小数"></a>无限小数</h1><p>暂时只能使用加法/比较<br>（以Python为例子）</p>
-<pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Inf_digits_float <span class="hljs-keyword">import</span> InfDigitsFloat
+<div class="hljs"><pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Inf_digits_float <span class="hljs-keyword">import</span> InfDigitsFloat
 a = InfDigitsFloat(<span class="hljs-string">"1.234"</span>)
 print(a+a)
 b = InfDigitsFloat(<span class="hljs-string">"1.2339"</span>)
-print(a&lt;b)</code></pre>
+print(a&lt;b)</code></pre></div>
             </article>
             <hr>
             <div>
