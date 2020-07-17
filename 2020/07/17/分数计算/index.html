@@ -17,7 +17,7 @@
   <meta name="description" content="Mathprolib-科学计算专用库">
   <meta name="author" content="Mathprolib">
   <meta name="keywords" content="">
-  <title>Python语言的mathprolib | Mathprolib</title>
+  <title>分数计算 | Mathprolib</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -158,8 +158,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-07-05 06:54">
-      2020年7月5日 早上
+    <time datetime="2020-07-17 08:29">
+      2020年7月17日 早上
     </time>
   </div>
 
@@ -169,7 +169,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      大约 233 字
+      大约 116 字
     </span>
   
 
@@ -179,7 +179,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       阅读时间： 大约 
-      3
+      1
        分钟
     </span>
   
@@ -210,82 +210,27 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <h1 id="python语言的mathprolib"><a href="#python语言的mathprolib" class="headerlink" title="python语言的mathprolib"></a>python语言的mathprolib</h1><p>————————————————<br>基础函数</p>
-<hr>
-<h3 id="fact"><a href="#fact" class="headerlink" title="fact"></a>fact</h3><ul>
-<li>功能：返回一个数的阶乘</li>
-<li>可能返回的错误：</li>
-<li><ul>
-<li>AssertionError</li>
-</ul>
-</li>
-<li><ul>
-<li>引发这种错误的原因</li>
-</ul>
-</li>
-<li><ul>
-<li><ol>
-<li>数字为负数</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><ul>
-<li><ol start="2">
-<li>数字为小数<h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;<span class="hljs-keyword">from</span> mathprolib.simple <span class="hljs-keyword">import</span> *
-&gt;&gt;&gt;fact(<span class="hljs-number">5</span>)
-<span class="hljs-number">120</span>
-&gt;&gt;&gt;fact(<span class="hljs-number">-1</span>)
-AssertionError:Cannot get factorail to negative number
-&gt;&gt;&gt;fact(<span class="hljs-number">1.2</span>)
-AssertionError:the number should be int(<span class="hljs-keyword">or</span> int-like float) <span class="hljs-keyword">not</span> other</code></pre></div>
-<h3 id="gcd"><a href="#gcd" class="headerlink" title="gcd"></a>gcd</h3></li>
-</ol>
-</li>
-</ul>
-</li>
-<li>功能：返回两个数的最大公约数</li>
-<li>可能返回的错误：</li>
-<li><ul>
-<li>无<h5 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h5><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;<span class="hljs-keyword">from</span> mathprolib.simple <span class="hljs-keyword">import</span> *
-&gt;&gt;&gt;gcd(<span class="hljs-number">12</span>,<span class="hljs-number">18</span>)
-<span class="hljs-number">6</span></code></pre></div>
-<h3 id="lcm"><a href="#lcm" class="headerlink" title="lcm"></a>lcm</h3></li>
-</ul>
-</li>
-<li>功能：返回两个数的最小公倍数</li>
-<li>可能返回的错误：</li>
-<li><ul>
-<li>无<h5 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h5><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;<span class="hljs-keyword">from</span> mathprolib.simple <span class="hljs-keyword">import</span> *
-&gt;&gt;&gt;lcm(<span class="hljs-number">12</span>,<span class="hljs-number">18</span>)
-<span class="hljs-number">36</span></code></pre></div>
-<h3 id="ln"><a href="#ln" class="headerlink" title="ln"></a>ln</h3></li>
-</ul>
-</li>
-<li>功能：返回一个数的自然对数</li>
-<li>可能返回的错误：</li>
-<li><ul>
-<li>ValueError</li>
-</ul>
-</li>
-<li><ul>
-<li>反回错误的原因：</li>
-</ul>
-</li>
-<li><ul>
-<li><ul>
-<li>参数是负数<h5 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h5><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;&gt;&gt;&gt;<span class="hljs-keyword">from</span> mathprolib.simple <span class="hljs-keyword">import</span> *
-&gt;&gt;&gt;ln(e)
-<span class="hljs-number">1</span>
-&gt;&gt;&gt;ln(<span class="hljs-number">1</span>)
-<span class="hljs-number">0</span>
-&gt;&gt;&gt;ln(<span class="hljs-number">-1</span>)
-ValueError: math domain error</code></pre></div></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+              <h1 id="Python-mathprolib"><a href="#Python-mathprolib" class="headerlink" title="Python mathprolib"></a>Python mathprolib</h1><h2 id="分数运算"><a href="#分数运算" class="headerlink" title="分数运算"></a>分数运算</h2><p>————————————————————</p>
+<h6 id="Python的分数运算存储于Fraction文件里，导入操作为："><a href="#Python的分数运算存储于Fraction文件里，导入操作为：" class="headerlink" title="Python的分数运算存储于Fraction文件里，导入操作为："></a>Python的分数运算存储于Fraction文件里，导入操作为：</h6><div class="hljs"><pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Fraction <span class="hljs-keyword">import</span> VulgarFraction,MixedFracion</code></pre></div>
+<h1 style="color:red" onclick="javascript:alert('记住，考试要考的【doge】')">普通的分数是VulgarFraction,虽然有Fraction类，但他没有运算功能</h1>
+例子1：
+使用Fraction计算
+$$
+\frac{18}{31} + \frac{10}{91}  
+$$  
+<div class="hljs"><pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Fraction <span class="hljs-keyword">import</span> VulgarFraction,MixedFracion
+v1 = VulgarFraction(<span class="hljs-number">18</span>,<span class="hljs-number">31</span>)
+v2 = VulgarFraction(<span class="hljs-number">10</span>,<span class="hljs-number">91</span>)
+print(v1+v2)</code></pre></div>
+例子2：
+使用Fraction计算：
+$$
+2\tfrac{2}{3} \times 2\tfrac{10}{21}  
+$$
+<div class="hljs"><pre><code class="hljs python"><span class="hljs-keyword">from</span> mathprolib.Fraction <span class="hljs-keyword">import</span> VulgarFraction,MixedFracion
+m1 = MixedFracion(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
+m2 = MixedFracion(<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">21</span>)
+print(m1+m2)</code></pre></div>
 
             </article>
             <hr>
@@ -296,9 +241,7 @@ ValueError: math domain error</code></pre></div></li>
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Python/">Python</a>
-                    
-                      <a class="hover-with-bg" href="/tags/%E6%96%87%E6%A1%A3/">文档</a>
+                      <a class="hover-with-bg" href="/tags/%E5%88%86%E6%95%B0/">分数</a>
                     
                   </div>
                 
@@ -311,18 +254,12 @@ ValueError: math domain error</code></pre></div></li>
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/07/05/Python-tringometry/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">python的mathprolib库--三角函数相关</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
                     
-                      <a href="/2020/07/04/readme/">
-                        <span class="hidden-mobile">快速入门+安装</span>
+                      <a href="/2020/07/05/Python-tringometry/">
+                        <span class="hidden-mobile">python的mathprolib库--三角函数相关</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -521,7 +458,7 @@ ValueError: math domain error</code></pre></div></li>
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Python语言的mathprolib&nbsp;",
+        "分数计算&nbsp;",
       ],
       cursorChar: "|",
       typeSpeed: 70,
